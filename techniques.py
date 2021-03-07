@@ -4,6 +4,7 @@ import re
 from functools import partial
 from collections import Counter
 import nltk
+# nltk.download("popular")
 from nltk.corpus import wordnet
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer

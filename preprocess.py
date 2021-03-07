@@ -79,7 +79,7 @@ def tokenize(text, wordCountBefore, textID, y):
     return finalTokens
 
 
-f = open("ss-twitterfinal.txt","r", encoding="utf8", errors='replace').read()
+f = open("tweets_cleaned.txt","r", encoding="utf8", errors='replace').read()
 
 t0 = time()
 totalSentences = 0
@@ -99,7 +99,7 @@ for line in f.split('\n'):
     columns = [col.strip() for col in columns]
 
     textID = (columns[0])
-    y = (columns[2])
+    y = (columns[1])
 
     text = removeUnicode(columns[1]) # Technique 0
     #print(text) # print initial text
